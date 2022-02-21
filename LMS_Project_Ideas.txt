@@ -1,0 +1,18 @@
+							     ---ABOUT PROJECT---
+
+1. Completed Admin Panel.
+2. Completed Login and Signup page.
+3. Completed whole admin panel features section and logout section.
+4. Completed Database connection using MySql and XAMP control panel.
+5. Completed the full admin part and 7.5 hour of full video.
+ Pending -- To create JAR file and to clean and build the project.
+ Pending -- To initialize the project and push it to github and netlify.
+ Pending -- LMS Dashboard panel and Wellcome Admin Panel.
+ Pending -- About US Page.
+ Pending -- Library_Management_System.java all method implementation to main file. **important**
+ Pending -- Pychart is not working properly.
+ Pending -- To create a complete LMS Dashboard with a new JPanel.
+ Pending -- We can edit and add new GUI and Panels to it.
+ pending -- Research about JPANEL,SWING-CONTAINERS,NETBEANS,JFORM,JFX & SWING,XAAMP,MYSQL,GIT-BASH,GITHUB,TRY-CATCH,JAVA,EXCEPTION.
+						
+					
