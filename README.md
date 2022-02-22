@@ -69,12 +69,12 @@ data server on port 3306.
 **Step 4:** Now just click Next for the rest of the windows. After all this the database connection is made. Make sure that you connect with the database before running the project by right clicking on the connection and selecting connect. Now you are ready to run the project!
 
 **Step 5:** Now to create the user table, issue_book table, student table etc, we have to write some sql querries in the database.
-1- create database library_ms;
-2- create table users(id int PRIMARY KEY AUTO_INCREMENT NOT null, name varchar(50), password varchar(50), email varchar(100), contact varchar(20));
-3- create table books_details(book_id int PRIMARY key not null, book_name varchar(100), author_name varchar(200), quantity int);
-4- create table student_details(student_id int PRIMARY KEY NOT null, student_name varchar(30), course_name varchar(50), branch varchar(50));
-5- create table issue_book_details(id int PRIMARY KEY NOT null AUTO_INCREMENT, book_id int, book_name varchar(150), student_id int, student_name varchar(50), issue_date date,      due_date date, status varchar(20));
-6- select book_name, count(*) as count from issue_book_details group by book_id;
+* ❏ create database library_ms;
+* ❏ create table users(id int PRIMARY KEY AUTO_INCREMENT NOT null, name varchar(50), password varchar(50), email varchar(100), contact varchar(20));
+* ❏ create table books_details(book_id int PRIMARY key not null, book_name varchar(100), author_name varchar(200), quantity int);
+* ❏ create table student_details(student_id int PRIMARY KEY NOT null, student_name varchar(30), course_name varchar(50), branch varchar(50));
+* ❏ create table issue_book_details(id int PRIMARY KEY NOT null AUTO_INCREMENT, book_id int, book_name varchar(150), student_id int, student_name varchar(50), issue_date date,      due_date date, status varchar(20));
+* ❏ select book_name, count(*) as count from issue_book_details group by book_id;
 
 ## 🤝 Consulting
 Stuck with some problem? Need help in solution development, guidance, training or capacity building? I am a Full Stack Developer with technical and leadership experience in a diverse range of technologies and domains. Let me know what problem you are facing at <b>soumya261412@gmail.com</b>.
@@ -106,8 +106,5 @@ If you liked the repo then kindly support it by giving it a star ⭐ and share i
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](#)
 
 If you find any bug in the code or have any improvements in mind then feel free to generate a pull request.
-
-## Issues
-[![GitHub Issues](https://img.shields.io/github/issues/harismuneer/Library-Management-System-JAVA.svg?style=flat&label=Issues&maxAge=2592000)](https://www.github.com/harismuneer/Library-Management-System-JAVA/issues)
 
 If you face any issue, you can create a new issue in the Issues Tab and I will be glad to help you out.
