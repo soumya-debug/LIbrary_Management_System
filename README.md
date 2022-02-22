@@ -90,13 +90,9 @@ You can get in touch with us on our LinkedIn Profiles:
 
 #### Soumya Ranjan Rout
 
-[![LinkedIn Link]](www.linkedin.com/in/soumya-ranjan-rout26)
-
 You can also follow my GitHub Profile to stay updated about my latest projects: [![GitHub Follow]](https://github.com/soumya-debug)
 
 #### Swaraj Sundar
-
-[![LinkedIn Link]](https://www.linkedin.com/in/sundar-swaraj/)
 
 You can also follow my GitHub Profile to stay updated about my latest projects: [![GitHub Follow]](https://github.com/sswaraj76)
 
