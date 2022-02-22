@@ -94,7 +94,7 @@ You can get in touch with us on our LinkedIn Profiles:
 
 You can also follow my GitHub Profile to stay updated about my latest projects: [![GitHub Follow](https://img.shields.io/badge/Connect-harismuneer-blue.svg?logo=Github&longCache=true&style=social&label=Follow)](https://github.com/harismuneer)
 
-#### Maham Amjad
+#### Swaraj Sundar
 
 [![LinkedIn Link](https://img.shields.io/badge/Connect-maham--amjad-blue.svg?logo=linkedin&longCache=true&style=social&label=Connect)](https://www.linkedin.com/in/maham-amjad-40796b177/)
 
