@@ -53,10 +53,10 @@ borrowed.
 
 3- Now everything is setup except the XAAMP MySql database for NetBeans. So, follow these steps to setup the database:
 
-**Step 1:** First download the XAAMP server extension from [](https://www.apachefriends.org/download.html) then open the live apache server and click 'start' on MySql
+**Step 1:** First download the XAAMP server extension from [XAAMP](https://www.apachefriends.org/download.html) then open the live apache server and click 'start' on MySql
 data server on port 3306.
    
-**Step 2:** After that create a database named library_ms that will show up on phpmyadmin tab. To get phpmyadmin tab click on [](http://127.0.0.1/phpmyadmin/).
+**Step 2:** After that create a database named library_ms that will show up on phpmyadmin tab. To get phpmyadmin tab click on [phpmyadmin](http://127.0.0.1/phpmyadmin/).
    
 **Step 3:** Provide the following database crendentials in the next popup and click Next.
   ```
