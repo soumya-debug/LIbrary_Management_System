@@ -133,11 +133,8 @@ public class ReturnBook extends javax.swing.JFrame {
         lbl_dueDate = new javax.swing.JLabel();
         lbl_bookError1 = new javax.swing.JLabel();
         lbl_issueId = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
         txt_bookId = new app.bolivia.swing.JCTextField();
         jLabel19 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
@@ -147,7 +144,9 @@ public class ReturnBook extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         rSMaterialButtonCircle2 = new rojerusan.RSMaterialButtonCircle();
         lbl_bookId1 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         lbl_bookId = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -156,14 +155,14 @@ public class ReturnBook extends javax.swing.JFrame {
         panel_main.setBackground(new java.awt.Color(255, 255, 255));
         panel_main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel4.setBackground(new java.awt.Color(255, 51, 51));
+        jPanel4.setBackground(new java.awt.Color(0, 51, 102));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel13.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 25)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AddNewBookIcons/icons8_Literature_100px_1.png"))); // NOI18N
         jLabel13.setText("Book Details");
-        jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 250, -1));
+        jPanel4.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 250, -1));
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -175,29 +174,29 @@ public class ReturnBook extends javax.swing.JFrame {
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 5, Short.MAX_VALUE)
         );
 
-        jPanel4.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 320, 5));
+        jPanel4.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 320, 5));
 
         jLabel15.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Issue Id :");
-        jPanel4.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 150, -1));
+        jPanel4.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 150, -1));
 
         jLabel16.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Book Name :");
-        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 150, -1));
+        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 150, -1));
 
         jLabel17.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Student Name :");
-        jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 150, -1));
+        jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 150, -1));
 
         lbl_studentName.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         lbl_studentName.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel4.add(lbl_studentName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 450, 190, 30));
+        jPanel4.add(lbl_studentName, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 190, 30));
 
         jLabel20.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
@@ -206,63 +205,40 @@ public class ReturnBook extends javax.swing.JFrame {
         lbl_bookName.setBackground(new java.awt.Color(255, 255, 255));
         lbl_bookName.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         lbl_bookName.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel4.add(lbl_bookName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 190, 30));
+        jPanel4.add(lbl_bookName, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 190, 30));
 
         jLabel24.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
         jLabel24.setText("Due Date :");
-        jPanel4.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 630, 150, -1));
+        jPanel4.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 540, 150, -1));
 
         lbl_bookError.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         lbl_bookError.setForeground(new java.awt.Color(255, 204, 0));
-        jPanel4.add(lbl_bookError, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 690, 300, 30));
+        jPanel4.add(lbl_bookError, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 600, 300, 30));
 
         jLabel25.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
         jLabel25.setText("Issue Date :");
-        jPanel4.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 540, 150, -1));
+        jPanel4.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 450, 150, -1));
 
         lbl_issueDate.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         lbl_issueDate.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel4.add(lbl_issueDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 540, 190, 30));
+        jPanel4.add(lbl_issueDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 450, 190, 30));
 
         lbl_dueDate.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         lbl_dueDate.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel4.add(lbl_dueDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 630, 190, 30));
+        jPanel4.add(lbl_dueDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 540, 190, 30));
 
         lbl_bookError1.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         lbl_bookError1.setForeground(new java.awt.Color(255, 204, 0));
-        jPanel4.add(lbl_bookError1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 650, 340, 30));
+        jPanel4.add(lbl_bookError1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 630, 340, 30));
 
         lbl_issueId.setBackground(new java.awt.Color(255, 255, 255));
         lbl_issueId.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         lbl_issueId.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel4.add(lbl_issueId, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 270, 190, 30));
+        jPanel4.add(lbl_issueId, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, 190, 30));
 
-        panel_main.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 0, 470, 800));
-
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 25)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AddNewBookIcons/icons8_Books_52px_1.png"))); // NOI18N
-        jLabel1.setText("Return Book");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
-        );
-
-        panel_main.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1470, 110, 230, 90));
+        panel_main.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 0, 470, 690));
 
         jPanel8.setBackground(new java.awt.Color(255, 0, 0));
 
@@ -289,22 +265,7 @@ public class ReturnBook extends javax.swing.JFrame {
             .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
 
-        panel_main.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1750, 0, -1, -1));
-
-        jPanel7.setBackground(new java.awt.Color(255, 51, 51));
-
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 350, Short.MAX_VALUE)
-        );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        panel_main.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1450, 200, -1, 5));
+        panel_main.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1380, 0, -1, -1));
 
         txt_bookId.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 51, 51)));
         txt_bookId.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
@@ -319,17 +280,17 @@ public class ReturnBook extends javax.swing.JFrame {
                 txt_bookIdActionPerformed(evt);
             }
         });
-        panel_main.add(txt_bookId, new org.netbeans.lib.awtextra.AbsoluteConstraints(1480, 310, 350, 40));
+        panel_main.add(txt_bookId, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 220, 350, 40));
 
         jLabel19.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 51, 51));
         jLabel19.setText("Book Id :");
-        panel_main.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 310, 110, 50));
+        panel_main.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 220, 110, 50));
 
         jLabel22.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 51, 51));
         jLabel22.setText("Student Id :");
-        panel_main.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 380, -1, 50));
+        panel_main.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 310, -1, 50));
 
         txt_studentId.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 51, 51)));
         txt_studentId.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
@@ -344,20 +305,20 @@ public class ReturnBook extends javax.swing.JFrame {
                 txt_studentIdActionPerformed(evt);
             }
         });
-        panel_main.add(txt_studentId, new org.netbeans.lib.awtextra.AbsoluteConstraints(1480, 380, 350, 40));
+        panel_main.add(txt_studentId, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 310, 350, 40));
 
-        rSMaterialButtonCircle1.setBackground(new java.awt.Color(102, 102, 255));
+        rSMaterialButtonCircle1.setBackground(new java.awt.Color(0, 51, 102));
         rSMaterialButtonCircle1.setText("FIND");
         rSMaterialButtonCircle1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSMaterialButtonCircle1ActionPerformed(evt);
             }
         });
-        panel_main.add(rSMaterialButtonCircle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 540, 440, 70));
+        panel_main.add(rSMaterialButtonCircle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 470, 430, 70));
 
-        jPanel5.setBackground(new java.awt.Color(102, 102, 255));
+        jPanel5.setBackground(new java.awt.Color(0, 51, 102));
 
-        jLabel12.setBackground(new java.awt.Color(102, 102, 255));
+        jLabel12.setBackground(new java.awt.Color(0, 51, 102));
         jLabel12.setFont(new java.awt.Font("Verdana", 0, 17)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AddNewBookIcons/icons8_Rewind_48px.png"))); // NOI18N
@@ -373,9 +334,9 @@ public class ReturnBook extends javax.swing.JFrame {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addContainerGap()
                 .addComponent(jLabel12)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -384,7 +345,7 @@ public class ReturnBook extends javax.swing.JFrame {
                 .addGap(0, 2, Short.MAX_VALUE))
         );
 
-        panel_main.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        panel_main.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, -1));
 
         rSMaterialButtonCircle2.setBackground(new java.awt.Color(255, 0, 51));
         rSMaterialButtonCircle2.setText("Return book");
@@ -393,22 +354,43 @@ public class ReturnBook extends javax.swing.JFrame {
                 rSMaterialButtonCircle2ActionPerformed(evt);
             }
         });
-        panel_main.add(rSMaterialButtonCircle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 650, 450, 70));
+        panel_main.add(rSMaterialButtonCircle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 560, 430, 70));
 
         lbl_bookId1.setBackground(new java.awt.Color(255, 255, 255));
         lbl_bookId1.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         lbl_bookId1.setForeground(new java.awt.Color(255, 255, 255));
         panel_main.add(lbl_bookId1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 270, 190, 30));
 
+        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 51, 0));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AddNewBookIcons/icons8_Books_52px_1.png"))); // NOI18N
+        jLabel1.setText("Return Book");
+        panel_main.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 70, 260, 130));
+
         lbl_bookId.setBackground(new java.awt.Color(255, 255, 255));
         lbl_bookId.setFont(new java.awt.Font("Yu Gothic UI", 0, 20)); // NOI18N
         lbl_bookId.setForeground(new java.awt.Color(255, 255, 255));
         lbl_bookId.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/library-2.png"))); // NOI18N
-        panel_main.add(lbl_bookId, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 110, 890, 630));
+        panel_main.add(lbl_bookId, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 50, 580, 640));
 
-        getContentPane().add(panel_main, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1880, 800));
+        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
 
-        setSize(new java.awt.Dimension(1881, 803));
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 320, Short.MAX_VALUE)
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+
+        panel_main.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 125, 320, 10));
+
+        getContentPane().add(panel_main, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1630, 800));
+
+        setSize(new java.awt.Dimension(1510, 690));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -422,6 +404,7 @@ public class ReturnBook extends javax.swing.JFrame {
     private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
         // TODO add your handling code here:
         System.exit(0);
+        // To close the system:
     }//GEN-LAST:event_jLabel18MouseClicked
 
     private void txt_bookIdFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txt_bookIdFocusLost
@@ -506,11 +489,10 @@ public class ReturnBook extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JLabel lbl_bookError;
     private javax.swing.JLabel lbl_bookError1;

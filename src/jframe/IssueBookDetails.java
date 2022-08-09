@@ -109,7 +109,7 @@ public class IssueBookDetails extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 299, Short.MAX_VALUE)
                 .addGap(35, 35, 35))
         );
         jPanel2Layout.setVerticalGroup(
@@ -178,7 +178,7 @@ public class IssueBookDetails extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 0, 90, -1));
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 0, 90, -1));
 
         tbl_issuebookDetails.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -188,14 +188,13 @@ public class IssueBookDetails extends javax.swing.JFrame {
                 "Id", "Book Name", "Student Name", "Issue Date", "Due Date", "Status"
             }
         ));
-        tbl_issuebookDetails.setColorBackgoundHead(new java.awt.Color(102, 102, 255));
-        tbl_issuebookDetails.setColorBordeFilas(new java.awt.Color(102, 102, 255));
+        tbl_issuebookDetails.setColorBackgoundHead(new java.awt.Color(0, 51, 102));
+        tbl_issuebookDetails.setColorBordeFilas(new java.awt.Color(0, 51, 102));
         tbl_issuebookDetails.setColorFilasBackgound2(new java.awt.Color(255, 255, 255));
         tbl_issuebookDetails.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 25)); // NOI18N
         tbl_issuebookDetails.setFuenteFilas(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         tbl_issuebookDetails.setFuenteFilasSelect(new java.awt.Font("Yu Gothic UI", 1, 20)); // NOI18N
         tbl_issuebookDetails.setFuenteHead(new java.awt.Font("Yu Gothic UI Semibold", 1, 20)); // NOI18N
-        tbl_issuebookDetails.setIntercellSpacing(new java.awt.Dimension(0, 0));
         tbl_issuebookDetails.setRowHeight(40);
         tbl_issuebookDetails.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -204,11 +203,11 @@ public class IssueBookDetails extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(tbl_issuebookDetails);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 1300, 300));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 1200, 300));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1380, 650));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 650));
 
-        setSize(new java.awt.Dimension(1376, 654));
+        setSize(new java.awt.Dimension(1300, 654));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

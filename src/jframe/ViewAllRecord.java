@@ -136,14 +136,14 @@ public class ViewAllRecord extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(102, 102, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 51, 102));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel13.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 25)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AddNewBookIcons/icons8_Literature_100px_1.png"))); // NOI18N
         jLabel13.setText("View All Record");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 30, 290, -1));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, 290, -1));
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -155,34 +155,34 @@ public class ViewAllRecord extends javax.swing.JFrame {
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 5, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, 400, 5));
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 140, 400, 5));
 
         jLabel21.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("Issue Date :");
-        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, -1, 40));
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, 40));
 
         date_fromDate.setColorBackground(new java.awt.Color(255, 0, 0));
         date_fromDate.setColorForeground(new java.awt.Color(255, 51, 51));
         date_fromDate.setColorSelForeground(new java.awt.Color(255, 0, 0));
         date_fromDate.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
         date_fromDate.setPlaceholder("Select Issue Date");
-        jPanel1.add(date_fromDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 350, -1));
+        jPanel1.add(date_fromDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 250, -1));
 
         jLabel22.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("Issue Date :");
-        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 200, -1, 40));
+        jLabel22.setText("Due Date :");
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 200, -1, 40));
 
         date_toDate.setColorBackground(new java.awt.Color(255, 0, 51));
         date_toDate.setColorForeground(new java.awt.Color(255, 51, 51));
         date_toDate.setColorSelForeground(new java.awt.Color(255, 0, 0));
         date_toDate.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
         date_toDate.setPlaceholder("Select Issue Date");
-        jPanel1.add(date_toDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 200, 350, -1));
+        jPanel1.add(date_toDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 200, 250, -1));
 
         jPanel5.setBackground(new java.awt.Color(255, 0, 0));
 
@@ -200,10 +200,10 @@ public class ViewAllRecord extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(33, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,7 +212,7 @@ public class ViewAllRecord extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 0, 90, -1));
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 0, 90, -1));
 
         jPanel7.setBackground(new java.awt.Color(255, 0, 0));
 
@@ -232,9 +232,9 @@ public class ViewAllRecord extends javax.swing.JFrame {
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel14)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -243,7 +243,7 @@ public class ViewAllRecord extends javax.swing.JFrame {
                 .addGap(0, 2, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, -1));
 
         rSMaterialButtonCircle1.setBackground(new java.awt.Color(255, 51, 51));
         rSMaterialButtonCircle1.setText("search");
@@ -252,7 +252,7 @@ public class ViewAllRecord extends javax.swing.JFrame {
                 rSMaterialButtonCircle1ActionPerformed(evt);
             }
         });
-        jPanel1.add(rSMaterialButtonCircle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 180, 250, 70));
+        jPanel1.add(rSMaterialButtonCircle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 170, 250, 70));
 
         rSMaterialButtonCircle2.setBackground(new java.awt.Color(51, 102, 0));
         rSMaterialButtonCircle2.setText("all");
@@ -261,9 +261,9 @@ public class ViewAllRecord extends javax.swing.JFrame {
                 rSMaterialButtonCircle2MouseClicked(evt);
             }
         });
-        jPanel1.add(rSMaterialButtonCircle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 100, 250, 70));
+        jPanel1.add(rSMaterialButtonCircle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 90, 250, 70));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1480, 280));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1360, 270));
 
         panel_table.setBackground(new java.awt.Color(255, 255, 255));
         panel_table.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -276,14 +276,13 @@ public class ViewAllRecord extends javax.swing.JFrame {
                 "Id", "Book Name", "Student Name", "Issue Date", "Due Date", "Status"
             }
         ));
-        tbl_issuebookDetails.setColorBackgoundHead(new java.awt.Color(102, 102, 255));
-        tbl_issuebookDetails.setColorBordeFilas(new java.awt.Color(102, 102, 255));
+        tbl_issuebookDetails.setColorBackgoundHead(new java.awt.Color(0, 51, 102));
+        tbl_issuebookDetails.setColorBordeFilas(new java.awt.Color(0, 51, 102));
         tbl_issuebookDetails.setColorFilasBackgound2(new java.awt.Color(255, 255, 255));
         tbl_issuebookDetails.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 25)); // NOI18N
         tbl_issuebookDetails.setFuenteFilas(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         tbl_issuebookDetails.setFuenteFilasSelect(new java.awt.Font("Yu Gothic UI", 1, 20)); // NOI18N
         tbl_issuebookDetails.setFuenteHead(new java.awt.Font("Yu Gothic UI Semibold", 1, 20)); // NOI18N
-        tbl_issuebookDetails.setIntercellSpacing(new java.awt.Dimension(0, 0));
         tbl_issuebookDetails.setRowHeight(40);
         tbl_issuebookDetails.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -292,11 +291,11 @@ public class ViewAllRecord extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(tbl_issuebookDetails);
 
-        panel_table.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 1300, 300));
+        panel_table.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 1300, 300));
 
-        getContentPane().add(panel_table, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 1480, 580));
+        getContentPane().add(panel_table, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 1360, 440));
 
-        setSize(new java.awt.Dimension(1481, 857));
+        setSize(new java.awt.Dimension(1360, 711));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

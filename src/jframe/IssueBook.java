@@ -36,7 +36,7 @@ public class IssueBook extends javax.swing.JFrame {
             if (rs.next()) {
                 lbl_bookId.setText(rs.getString("book_id"));
                 lbl_bookName.setText(rs.getString("book_name"));
-                lbl_author.setText(rs.getString("author"));
+                lbl_author.setText(rs.getString("author_name"));
                 lbl_quantity.setText(rs.getString("quantity"));
             } else {
                 lbl_bookError.setText("Invalid book id");
@@ -57,8 +57,8 @@ public class IssueBook extends javax.swing.JFrame {
 
             if (rs.next()) {
                 lbl_studentId.setText(rs.getString("student_id"));
-                lbl_studentName.setText(rs.getString("name"));
-                lbl_course.setText(rs.getString("course"));
+                lbl_studentName.setText(rs.getString("student_name"));
+                lbl_course.setText(rs.getString("course_name"));
                 lbl_branch.setText(rs.getString("branch"));
             } else {
                 lbl_studentError.setText("Invalid student id");
@@ -79,7 +79,7 @@ public class IssueBook extends javax.swing.JFrame {
         Date uIssueDate = date_issueDate.getDatoFecha();
         Date uDueDate = date_dueDate.getDatoFecha();
         Long l1 = uIssueDate.getTime();
-        long l2 = uDueDate.getTime();
+        Long l2 = uDueDate.getTime();
         java.sql.Date sIssueDate = new java.sql.Date(l1);
         java.sql.Date sDueDate = new java.sql.Date(l2);
 
@@ -220,7 +220,7 @@ public class IssueBook extends javax.swing.JFrame {
         panel_main.setBackground(new java.awt.Color(255, 255, 255));
         panel_main.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(102, 102, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 51, 102));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
@@ -296,7 +296,7 @@ public class IssueBook extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(255, 51, 51));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel5.setBackground(new java.awt.Color(102, 102, 255));
+        jPanel5.setBackground(new java.awt.Color(0, 51, 102));
 
         jLabel12.setBackground(new java.awt.Color(102, 102, 255));
         jLabel12.setFont(new java.awt.Font("Verdana", 0, 17)); // NOI18N

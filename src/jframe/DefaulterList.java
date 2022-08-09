@@ -125,7 +125,7 @@ public class DefaulterList extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 50, 340, 90));
 
-        jPanel8.setBackground(new java.awt.Color(255, 0, 0));
+        jPanel8.setBackground(new java.awt.Color(0, 51, 102));
 
         jLabel14.setBackground(new java.awt.Color(102, 102, 255));
         jLabel14.setFont(new java.awt.Font("Verdana", 0, 17)); // NOI18N
@@ -194,14 +194,13 @@ public class DefaulterList extends javax.swing.JFrame {
                 "Id", "Book Name", "Student Name", "Issue Date", "Due Date", "Status"
             }
         ));
-        tbl_issuebookDetails.setColorBackgoundHead(new java.awt.Color(102, 102, 255));
-        tbl_issuebookDetails.setColorBordeFilas(new java.awt.Color(102, 102, 255));
+        tbl_issuebookDetails.setColorBackgoundHead(new java.awt.Color(0, 51, 102));
+        tbl_issuebookDetails.setColorBordeFilas(new java.awt.Color(0, 51, 102));
         tbl_issuebookDetails.setColorFilasBackgound2(new java.awt.Color(255, 255, 255));
         tbl_issuebookDetails.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 25)); // NOI18N
         tbl_issuebookDetails.setFuenteFilas(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         tbl_issuebookDetails.setFuenteFilasSelect(new java.awt.Font("Yu Gothic UI", 1, 20)); // NOI18N
         tbl_issuebookDetails.setFuenteHead(new java.awt.Font("Yu Gothic UI Semibold", 1, 20)); // NOI18N
-        tbl_issuebookDetails.setIntercellSpacing(new java.awt.Dimension(0, 0));
         tbl_issuebookDetails.setRowHeight(40);
         tbl_issuebookDetails.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

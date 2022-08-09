@@ -42,8 +42,8 @@ public class ManageStudents extends javax.swing.JFrame {
             
             while(rs.next()) {
                 String studentId = rs.getString("student_id");
-                String studentName = rs.getString("name");
-                String course = rs.getString("course");
+                String studentName = rs.getString("student_name");
+                String course = rs.getString("course_name");
                 String branch = rs.getString("branch");
                 
                 Object[] obj = {studentId, studentName, course, branch};
@@ -95,7 +95,7 @@ public class ManageStudents extends javax.swing.JFrame {
         
         try {
             Connection con = DBConnection.getConnection();
-            String sql = "update student_details set name = ?,course = ?,branch = ? where student_id = ?";
+            String sql = "update student_details set student_name = ?,course_name = ?,branch = ? where student_id = ?";
             PreparedStatement pst = con.prepareCall(sql);
             pst.setString(1, studentName);
             pst.setString(2, course);
@@ -208,7 +208,7 @@ public class ManageStudents extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(jLabel1)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -217,9 +217,9 @@ public class ManageStudents extends javax.swing.JFrame {
                 .addGap(0, 2, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 50));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 50));
 
-        jPanel5.setBackground(new java.awt.Color(102, 102, 255));
+        jPanel5.setBackground(new java.awt.Color(0, 51, 102));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel6.setBackground(new java.awt.Color(255, 51, 51));
@@ -241,7 +241,7 @@ public class ManageStudents extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(jLabel3)
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -252,7 +252,6 @@ public class ManageStudents extends javax.swing.JFrame {
 
         jPanel5.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 50));
 
-        txt_studentId.setBackground(new java.awt.Color(102, 102, 255));
         txt_studentId.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 255, 255)));
         txt_studentId.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
         txt_studentId.setPlaceholder("Enter Student Id...");
@@ -261,19 +260,18 @@ public class ManageStudents extends javax.swing.JFrame {
                 txt_studentIdFocusLost(evt);
             }
         });
-        jPanel5.add(txt_studentId, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, 390, -1));
+        jPanel5.add(txt_studentId, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, 390, -1));
 
         jLabel10.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Enter Student Id");
-        jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 290, 50));
+        jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 290, 50));
 
         jLabel7.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AddNewBookIcons/icons8_Contact_26px.png"))); // NOI18N
-        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 60, 50));
+        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 60, 50));
 
-        txt_studentName.setBackground(new java.awt.Color(102, 102, 255));
         txt_studentName.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 255, 255)));
         txt_studentName.setFont(new java.awt.Font("Tahoma", 0, 17)); // NOI18N
         txt_studentName.setPlaceholder("Enter Student Name...");
@@ -282,37 +280,37 @@ public class ManageStudents extends javax.swing.JFrame {
                 txt_studentNameFocusLost(evt);
             }
         });
-        jPanel5.add(txt_studentName, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, 390, -1));
+        jPanel5.add(txt_studentName, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 390, -1));
 
         jLabel11.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Enter Student Name:");
-        jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 320, 290, 50));
+        jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 290, 50));
 
         jLabel8.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AddNewBookIcons/icons8_Moleskine_26px.png"))); // NOI18N
-        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 60, 50));
+        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 60, 50));
 
         jLabel12.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Select Course");
-        jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, 290, 50));
+        jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 290, 50));
 
         jLabel9.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AddNewBookIcons/icons8_Collaborator_Male_26px.png"))); // NOI18N
-        jPanel5.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 60, 50));
+        jPanel5.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 60, 50));
 
         jLabel13.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Select Branch");
-        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 520, 290, 50));
+        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 410, 290, 50));
 
         jLabel15.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AddNewBookIcons/icons8_Unit_26px.png"))); // NOI18N
-        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 550, 60, 50));
+        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 60, 50));
 
         rSMaterialButtonCircle1.setBackground(new java.awt.Color(255, 51, 51));
         rSMaterialButtonCircle1.setText("DELETE");
@@ -321,7 +319,7 @@ public class ManageStudents extends javax.swing.JFrame {
                 rSMaterialButtonCircle1ActionPerformed(evt);
             }
         });
-        jPanel5.add(rSMaterialButtonCircle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 640, 110, 70));
+        jPanel5.add(rSMaterialButtonCircle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 530, 110, 70));
 
         rSMaterialButtonCircle2.setBackground(new java.awt.Color(255, 51, 51));
         rSMaterialButtonCircle2.setText("ADD");
@@ -330,7 +328,7 @@ public class ManageStudents extends javax.swing.JFrame {
                 rSMaterialButtonCircle2ActionPerformed(evt);
             }
         });
-        jPanel5.add(rSMaterialButtonCircle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 640, 110, 70));
+        jPanel5.add(rSMaterialButtonCircle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 530, 110, 70));
 
         rSMaterialButtonCircle3.setBackground(new java.awt.Color(255, 51, 51));
         rSMaterialButtonCircle3.setText("UPDATE");
@@ -339,7 +337,7 @@ public class ManageStudents extends javax.swing.JFrame {
                 rSMaterialButtonCircle3ActionPerformed(evt);
             }
         });
-        jPanel5.add(rSMaterialButtonCircle3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 640, 110, 70));
+        jPanel5.add(rSMaterialButtonCircle3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 530, 110, 70));
 
         combo_branch.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
         combo_branch.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aeronautical Engineering", "Industrial Engineering", "Aerospace Engineering", "Marine Engineering", "Automobile Engineering", "Mechanical Engineering", "Biomedical Engineering", "Mechatronics Engineering", "Biotechnology Engineering", "Metallurgical Engineering", "Ceramic Engineering", "Mining Engineering", "Chemical Engineering", "Petroleum Engineering", "Civil Engineering", "Power Engineering", "Communications Engineering", "Production Engineering", "Computer Science Engineering", "Robotics Engineering", "Construction Engineering", "Structural Engineering", "Electrical Engineering", "Telecommunication Engineering", "Electronics & Communication Engineering", "Textile Engineering", "Electronics Engineering", "Tool Engineering", "Environmental Engineering" }));
@@ -348,20 +346,20 @@ public class ManageStudents extends javax.swing.JFrame {
                 combo_branchActionPerformed(evt);
             }
         });
-        jPanel5.add(combo_branch, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 580, 390, 30));
+        jPanel5.add(combo_branch, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 470, 390, 30));
 
         combo_CourseName.setFont(new java.awt.Font("Verdana", 0, 13)); // NOI18N
         combo_CourseName.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "BBA- Bachelor of Business Administration", "BMS- Bachelor of Management Science", "BFA- Bachelor of Fine Arts", "BEM- Bachelor of Event Management", "Integrated Law Course- BA + LL.B", "BJMC- Bachelor of Journalism and Mass Communication", "BFD- Bachelor of Fashion Designing", "BSW- Bachelor of Social Work", "BBS- Bachelor of Business Studies", "BTTM- Bachelor of Travel and Tourism Management", "Aviation Courses", "B.Sc- Interior Design", "B.Sc.- Hospitality and Hotel Administration", "Bachelor of Design (B. Design)", "Bachelor of Performing Arts", "BA in History", "BE/B.Tech- Bachelor of Technology", "B.Arch- Bachelor of Architecture", "BCA- Bachelor of Computer Applications", "B.Sc.- Information Technology", "B.Sc- Nursing", "BPharma- Bachelor of Pharmacy", "B.Sc- Interior Design", "BDS- Bachelor of Dental Surgery", "Animation, Graphics and Multimedia", "B.Sc. – Nutrition & Dietetics", "BPT- Bachelor of Physiotherapy", "B.Sc- Applied Geology", "BA/B.Sc. Liberal Arts", "B.Sc.- Physics", "B.Sc. Chemistry", "B.Sc. Mathematics", "Aeronautical Engineering", "Automobile Engineering", "Civil Engineering", "Computer Science and Engineering", "Biotechnology Engineering", "Electrical and Electronics Engineering", "Electronics and Communication Engineering", "Automation and Robotics", "Petroleum Engineering", "Instrumentation Engineering", "Ceramic Engineering", "Chemical Engineering", "Structural Engineering", "Transportation Engineering", "Construction Engineering", "Power Engineering", "Robotics Engineering", "Textile Engineering", "Smart Manufacturing & Automation", "B.Com- Bachelor of Commerce", "BBA- Bachelor of Business Administration", "B.Com (Hons.)", "BA (Hons.) in Economics", "Integrated Law Program- B.Com LL.B.", "Integarted Law Program- BBA LL.B", "CA- Chartered Accountancy", "CS- Company Secretary", "Bachelor of Design in Accessory Design, fashion Design, Ceramic Design, Leather Design, Graphic Design, Industrial Design, Jewellery Design", "Bachelor in Foreign Language", "Diploma Courses", "Advanced Diploma Courses", "Certificate Courses" }));
-        jPanel5.add(combo_CourseName, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 480, 390, 30));
+        jPanel5.add(combo_CourseName, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 370, 390, 30));
 
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 820));
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 820));
 
         jLabel14.setFont(new java.awt.Font("SimSun", 1, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Username");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 290, 50));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 830));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 830));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -391,7 +389,7 @@ public class ManageStudents extends javax.swing.JFrame {
             .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
 
-        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 0, 130, 50));
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 0, 130, 50));
 
         tbl_studentDetails.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -401,14 +399,13 @@ public class ManageStudents extends javax.swing.JFrame {
                 "Student Id", "Name", "Course", "Branch"
             }
         ));
-        tbl_studentDetails.setColorBackgoundHead(new java.awt.Color(102, 102, 255));
-        tbl_studentDetails.setColorBordeFilas(new java.awt.Color(102, 102, 255));
+        tbl_studentDetails.setColorBackgoundHead(new java.awt.Color(0, 51, 102));
+        tbl_studentDetails.setColorBordeFilas(new java.awt.Color(0, 51, 102));
         tbl_studentDetails.setColorFilasBackgound2(new java.awt.Color(255, 255, 255));
         tbl_studentDetails.setFont(new java.awt.Font("Yu Gothic UI Light", 0, 25)); // NOI18N
         tbl_studentDetails.setFuenteFilas(new java.awt.Font("Yu Gothic UI Semibold", 0, 18)); // NOI18N
         tbl_studentDetails.setFuenteFilasSelect(new java.awt.Font("Yu Gothic UI", 1, 20)); // NOI18N
         tbl_studentDetails.setFuenteHead(new java.awt.Font("Yu Gothic UI Semibold", 1, 20)); // NOI18N
-        tbl_studentDetails.setIntercellSpacing(new java.awt.Dimension(0, 0));
         tbl_studentDetails.setRowHeight(40);
         tbl_studentDetails.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -417,13 +414,13 @@ public class ManageStudents extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(tbl_studentDetails);
 
-        jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 840, 300));
+        jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 840, 300));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 30)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 51, 51));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/AddNewBookIcons/icons8_Student_Male_100px.png"))); // NOI18N
         jLabel4.setText("  Manage Students");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 60, -1, -1));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, -1, -1));
 
         jPanel7.setBackground(new java.awt.Color(255, 51, 51));
         jPanel7.setForeground(new java.awt.Color(255, 51, 51));
@@ -439,11 +436,11 @@ public class ManageStudents extends javax.swing.JFrame {
             .addGap(0, 5, Short.MAX_VALUE)
         );
 
-        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 410, 5));
+        jPanel3.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 410, 5));
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 0, 1140, 820));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 940, 820));
 
-        setSize(new java.awt.Dimension(1724, 824));
+        setSize(new java.awt.Dimension(1441, 655));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
